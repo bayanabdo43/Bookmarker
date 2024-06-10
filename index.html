@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+   <main class="min-vh-100">
+    <div class="w-75 mx-auto text-center py-5">
+        <h1 class="pb-5">Bookmarker</h1>
+        <div class="inner py-5 mb-5">    
+            <div class="pb-4">
+                <i class="fa-solid fa-bookmark"></i>
+                <h2 class="d-inline-block">Bookmark your favorite sites</h2>
+                <i class="fa-solid fa-bookmark"></i>
+            </div>
+            <div class="has-validation mb-4 d-flex flex-wrap">
+                <label class="mb-2" for="floatingInputGroup2"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                <input type="text" oninput="validSiteName(this)" class="form-control focus-ring focus-ring-warning" id="floatingInputGroup2" placeholder="Bookmark Name" required>
+            </div>
+            <div class="has-validation mb-4 d-flex flex-wrap">
+                <label class="mb-2" for="floatingInputGroup"><i class="fa-solid fa-link"></i> Site URL</label>
+                <input type="text" oninput="validSiteName(this)" class="form-control focus-ring focus-ring-warning" id="floatingInputGroup" placeholder="Website URL" required>
+            </div>
+            <button onclick="addWebsite()" type="button" class="btn btn-danger">Submit</button>
+        </div>
+
+        <table class="bg-white w-100">
+            <thead>
+                <tr>
+                    <th class="p-3">Index</th>
+                    <th class="p-3">Website Name</th>
+                    <th class="p-3">Visit</th>
+                    <th class="p-3">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="myData">
+                
+            </tbody>
+        </table>
+
+        <!-- <div class="box-info position-absolute start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center" id="alertt">
+            <div class="alert alert-success text-start w-25 bg-white" role="alert">
+                <header class="d-flex justify-content-between mb-4">
+                    <div>
+                        <i class="fa-solid fa-circle text-danger"></i>
+                        <i class="fa-solid fa-circle text-warning"></i>
+                        <i class="fa-solid fa-circle text-success"></i>
+                    </div>
+                    <button onclick="close()" class="bg-white border-0"><i class="fa-solid fa-xmark"></i></button>
+                </header>
+                <h4 class="alert-heading mb-3">Site Name or Url is not valid, Please follow the rules below :</h4>
+                <p><i class="fa-regular fa-circle-right"></i> Site name must contain at least 3 characters</p>
+                <p><i class="fa-regular fa-circle-right"></i> Site URL must be a valid one</p>
+            </div>
+        </div> -->
+        
+    </div>
+   </main>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>

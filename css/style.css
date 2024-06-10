@@ -1,0 +1,72 @@
+::selection{
+    background-color: rgb(254, 194, 96);
+    color: rgb(53, 46, 40);
+}
+
+main{
+    background-color: rgb(247, 236, 222);
+
+    h1{
+        font-size: 5rem;
+        font-family: Pacifico, cursive;
+        color: rgb(53, 46, 40);
+        isolation: isolate;
+        position: relative;
+        width: 36%;
+        margin: auto;
+        &::after{
+            content: "";
+            height: 30px;
+            width: 100%;
+            background-color: rgb(254, 194, 96);
+            position: absolute;
+            left: 0;
+            bottom: 55px;
+            z-index: -1;
+            transition: all 0.99s;
+        }
+        &:hover::after{
+            height: 60px;
+        }
+    }
+    .inner{
+        border: 2px dotted black;
+        border-left: 0;
+        border-right: 0;
+
+        h2 , .fa-bookmark{
+        font-size: 25px;
+        background-image: linear-gradient(to right, rgb(60, 165, 92), rgb(181, 172, 73));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    }
+
+   
+    
+}
+
+
+@media (min-width:640px){
+   main h1{
+        font-size: 2rem;
+    }
+}
+@media (min-width:768px) {
+    main h1{
+        font-size: 1rem;
+    }
+}
+/*******large*******/
+@media (min-width:1024px){
+    
+   
+}
+/*******x large*******/
+@media (min-width:1282px) {
+ 
+}
+/*******xx large*******/
+@media (min-width:1536px){
+    
+}
